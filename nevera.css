@@ -1,0 +1,86 @@
+/* Barra de navegaciÃ³n */
+.navbar {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    background: linear-gradient(to right, #FFD700, #C0C0C0);
+    padding: 10px 20px;
+  }
+  
+  .navbar .logo img {
+    width: 120px; 
+    margin-right: 20px; 
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: rgb(95, 93, 93);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    color: #000000;
+  }
+
+  .producto-container {
+    display: flex;
+    flex-direction: column; /* Para que la imagen y la descripciÃ³n estÃ©n en columna en pantallas pequeÃ±as */
+    align-items: center; /* Centrar horizontalmente */
+    padding: 20px;
+    border-bottom: 1px solid #eee; /* LÃ­nea de separaciÃ³n */
+    margin-bottom: 20px;
+  }
+  
+  .producto-imagen {
+    width: 200px; /* Ancho fijo de la imagen */
+    margin-bottom: 10px;
+  }
+  
+  .producto-descripcion {
+    text-align: center; /* Centrar el texto descriptivo */
+    margin-bottom: 20px;
+  }
+  
+  .producto-precio {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .producto-boton {
+    background-color: #020202; /* Azul de Bootstrap */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Media query para hacerlo responsivo */
+  @media (min-width: 768px) {
+    .producto-container {
+      flex-direction: row; /* Cambiar a fila en pantallas medianas y grandes */
+      justify-content: space-around; /* Distribuir el espacio entre imagen y descripciÃ³n */
+    }
+  
+    .producto-imagen {
+      margin-bottom: 0;
+    }
+  
+    .producto-descripcion {
+      text-align: left; /* Alinear el texto a la izquierda */
+    }
+  }
+
+  
